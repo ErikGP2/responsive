@@ -6,17 +6,31 @@
                     background-color: pink;
                 }
 
-                @media screen and (min-width: 480px) {
-                body {
-                    background-color: lightgreen;
+                    @media screen and (min-width: 480px) {
+                        body {
+                        background-color: lightgreen;
+                        }
                 }
+
+                div{
+                    background-color: blue;
+                    width: 50%;
+                    float: left;
+                    border-width: thick;
+                    border-color: black;
+                }
+
+                @media screen and (min-width: 900px) {
+                    div{
+                        background-color: red;
+                    }
                 }
             </style>
         </head>
         <body>
 
-            <h1>Resize the browser window to see the effect!</h1>
-            <p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+            <div><h1>Resize the browser window to see the effect!</h1></div>
+            <div><p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p></div>
 
         </body>
     </html>
